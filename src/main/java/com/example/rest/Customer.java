@@ -2,24 +2,22 @@
 package com.example.rest;
 
 import java.util.concurrent.atomic.AtomicLong;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlElement;
 
-@XmlRootElement
+
 public class Customer {
-  @XmlElement
+ 
   private final long id;
-  @XmlElement
+ 
   private final String firstName;
-  @XmlElement
+
   private final String lastName;
-  @XmlElement
+ 
   private final String email;
-  @XmlElement
+  
   private final String city;
-  @XmlElement
+  
   private final String state;
-  @XmlElement
+ 
   private  String birthday;
   private static final AtomicLong counter = new AtomicLong(100);
  

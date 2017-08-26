@@ -37,9 +37,8 @@ public class Main{
     public static HttpServer startServer() {
         // create a resource config that scans for JAX-RS resources and providers
         // in com.example.rest package
-        final ResourceConfig rc = new ResourceConfig()
-                                    .packages("com.example.rest")
-                                    .register(new CorsFilter());
+        final ResourceConfig rc = new ResourceConfig().packages("com.example.rest");
+                                    
                                         
 
         // create and start a new instance of grizzly http server
