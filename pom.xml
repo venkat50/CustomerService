@@ -8,7 +8,6 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>Sample1</name>
-    
     <dependencyManagement>
         <dependencies>
             <dependency>
