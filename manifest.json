@@ -1,0 +1,8 @@
+{
+    "runtime":{
+        "majorVersion": "8"
+    },
+    "command": "java -jar jersey-service-1.0-SNAPSHOT.jar",
+    
+    "notes": "REST app for testing"
+}
