@@ -36,12 +36,12 @@
             <artifactId>jersey-media-json-jackson</artifactId>
         </dependency>
         
-         <dependency>
-             <groupId>junit</groupId>
-             <artifactId>junit</artifactId>
-             <version>4.9</version>
-             <scope>test</scope>
-         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.9</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -115,6 +115,23 @@
                     </execution>
                 </executions>
             </plugin>   
+            <plugin>
+                <groupId>com.sebastian-daschner</groupId>
+                <artifactId>jaxrs-analyzer-maven-plugin</artifactId>
+                <version>0.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>analyze-jaxrs</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Available backends, defaults to plaintext -->
+                            <!-- <backend>plaintext</backend> -->
+                            <backend>swagger</backend>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
